@@ -1,5 +1,6 @@
 package com.example.hrms.api.controllers;
 
+import java.rmi.RemoteException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.hrms.business.abstracts.PositionService;
+import com.example.hrms.core.Result;
 import com.example.hrms.entities.concretes.Position;
 
 @RestController
@@ -24,6 +26,10 @@ public class PositionsController {
 	@GetMapping("/getall")
 	public List<Position> getAll(){
 		return positionService.getAll();
+	}
+	
+	public Result add(Position position) throws RemoteException, Exception {
+		return positionService.add(position);
 	}
 
 }

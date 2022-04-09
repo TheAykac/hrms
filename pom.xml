@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>kodlamaio</groupId>
-	<artifactId>northwind</artifactId>
+	<artifactId>hrms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>northwind</name>
 	<description>Demo project for Spring Boot</description>
