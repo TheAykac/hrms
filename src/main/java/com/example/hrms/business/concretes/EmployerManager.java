@@ -15,6 +15,7 @@ import com.example.hrms.core.SuccesDataResult;
 import com.example.hrms.core.SuccessResult;
 import com.example.hrms.dataAccess.abstracts.EmployerDao;
 import com.example.hrms.entities.concretes.Employer;
+import com.example.hrms.entities.concretes.JobAdvertisement;
 
 @Service
 public class EmployerManager implements EmployerService{
@@ -45,6 +46,12 @@ public class EmployerManager implements EmployerService{
 			return new ErrorDataResult<Employer>("kayıt oluşturulamadı");
 		}
 		
+	}
+
+	@Override
+	public Result addJobAdvetisement(JobAdvertisement jobAdvertisement) {
+		
+		return new SuccesDataResult<JobAdvertisement>("İş ilanı sisteme yüklendi.");
 	}
 	
 
