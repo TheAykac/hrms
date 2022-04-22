@@ -2,18 +2,19 @@ package com.example.hrms.business.concretes;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.hrms.business.abstracts.JobAdvertisementService;
-import com.example.hrms.core.DataResult;
-import com.example.hrms.core.Result;
-import com.example.hrms.core.SuccesDataResult;
-import com.example.hrms.core.SuccessResult;
+import com.example.hrms.core.results.DataResult;
+import com.example.hrms.core.results.Result;
+import com.example.hrms.core.results.SuccesDataResult;
+import com.example.hrms.core.results.SuccessResult;
 import com.example.hrms.dataAccess.abstracts.JobAdvertisementDao;
-import com.example.hrms.dataAccess.abstracts.JobSeekerDao;
+
 import com.example.hrms.entities.concretes.JobAdvertisement;
-import com.example.hrms.entities.concretes.JobSeeker;
+
 @Service
 public class JobAdvertisementManager implements JobAdvertisementService {
 

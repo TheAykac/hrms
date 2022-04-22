@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.hrms.business.abstracts.JobSeekerService;
-import com.example.hrms.core.DataResult;
-import com.example.hrms.core.ErrorResult;
-import com.example.hrms.core.Result;
-import com.example.hrms.core.SuccesDataResult;
-import com.example.hrms.core.SuccessResult;
+import com.example.hrms.core.results.DataResult;
+import com.example.hrms.core.results.ErrorResult;
+import com.example.hrms.core.results.Result;
+import com.example.hrms.core.results.SuccesDataResult;
+import com.example.hrms.core.results.SuccessResult;
 import com.example.hrms.dataAccess.abstracts.JobSeekerDao;
 import com.example.hrms.entities.concretes.JobSeeker;
 

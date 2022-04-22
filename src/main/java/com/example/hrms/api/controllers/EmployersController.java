@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.hrms.business.abstracts.EmployerService;
-import com.example.hrms.core.DataResult;
-import com.example.hrms.core.Result;
-import com.example.hrms.core.SuccesDataResult;
+import com.example.hrms.core.results.DataResult;
+import com.example.hrms.core.results.Result;
+import com.example.hrms.core.results.SuccesDataResult;
 import com.example.hrms.entities.concretes.Employer;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;

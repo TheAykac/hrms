@@ -1,18 +1,17 @@
 package com.example.hrms.business.concretes;
 
 import java.rmi.RemoteException;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.hrms.business.abstracts.EmployerService;
-import com.example.hrms.core.DataResult;
-import com.example.hrms.core.ErrorDataResult;
-import com.example.hrms.core.ErrorResult;
-import com.example.hrms.core.Result;
-import com.example.hrms.core.SuccesDataResult;
-import com.example.hrms.core.SuccessResult;
+import com.example.hrms.core.results.DataResult;
+import com.example.hrms.core.results.ErrorDataResult;
+import com.example.hrms.core.results.Result;
+import com.example.hrms.core.results.SuccesDataResult;
 import com.example.hrms.dataAccess.abstracts.EmployerDao;
 import com.example.hrms.entities.concretes.Employer;
 import com.example.hrms.entities.concretes.JobAdvertisement;
